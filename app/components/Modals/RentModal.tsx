@@ -84,7 +84,7 @@ const RentModal = () => {
     }
     setIsLoading(true);
     axios
-      .post("/api/listngs", data)
+      .post("/api/listings", data)
       .then(() => {
         toast.success("Listin Created!");
         router.refresh();
